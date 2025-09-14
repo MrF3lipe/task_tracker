@@ -12,12 +12,18 @@ Task Tracker CLI es una herramienta que permite gestionar tareas mediante una ap
 
 ## Uso
 
+Primero se ejecuta la aplicacion con
+
+```bash
+python task_tracker.py
+```
+
 ### Agregar Tarea
 
 Para agregar una tarea se utiliza `add`
 
 ```bash
-python task_tracker.py add "Nombre de tarea"
+add "Nombre de tarea"
 ```
 
 ### Actualizar Tarea
@@ -25,7 +31,7 @@ python task_tracker.py add "Nombre de tarea"
 Para actualizar una tarea se utiliza `update`
 
 ```bash
-python task_tracker.py update ID "Nuevo nombre de la tarea"
+update ID "Nuevo nombre de la tarea"
 ```
 
 ### Eliminar Tarea
@@ -33,13 +39,13 @@ python task_tracker.py update ID "Nuevo nombre de la tarea"
 Para eliminar una tarea se utiliza `delete`
 
 ```bash
-python task_tracker.py delete ID
+delete ID
 ```
 
 Tambien se pueden eliminar todas las tareas utilizando
 
 ```bash
-python task_tracker.py delete .
+delete .
 ```
 
 ### Marcar Tarea
@@ -47,8 +53,8 @@ python task_tracker.py delete .
 Para cambiar el estado de una tarea se usa `mark-in-progress` o `mark-done`
 
 ```bash
-python task_tracker.py mark-in-progress ID
-python task_tracker.py mark-done ID
+mark-in-progress ID
+mark-done ID
 ```
 
 ### Listar Tareas
@@ -56,8 +62,16 @@ python task_tracker.py mark-done ID
 Las tareas se pueden listar con `list` y si se quiere especificar entonces se usaría el estado
 
 ```bash
-python task_tracker.py list 
-python task_tracker.py list done
+list
+list done
+```
+
+### Salir
+
+Para finalizar la aplicación puedes usar
+
+```bash
+end
 ```
 
 Proyecto basado en https://roadmap.sh/projects/task-tracker
